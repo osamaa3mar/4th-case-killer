@@ -7,7 +7,7 @@ function checkName(event) {
     function isNotInKillers(input) {
         return !killers.includes(input);
     }
-    if (name === "الياس") {
+    if (name === "الياس" || name === "إلياس") {
         window.location.href = "Killer-reveal.html";
     } else if (!isNotInKillers(name)) {
         Swal.fire({
