@@ -2,11 +2,14 @@ function checkName(event) {
     event.preventDefault();
 
     var name = document.getElementById("nameInput").value.toLowerCase();
+    const killers = ["هيا", "صفوان","شيماء","جاد","مراد"];
 
-    if (name === "الياس") {
+    function isNotInKillers(input) {
+        return !killers.includes(input);
+    }
+    if (name === "الياس" || name === "إلياس") {
         window.location.href = "Killer-reveal.html";
-    } else if (name === "مراد" || name === "جاد" ||
-    name === "شيماء" || name === "صفوان" || name === "هيا" ) {
+    } else if (!isNotInKillers(name)) {
         Swal.fire({
             icon: 'error',
             title: 'خطأ...',
