@@ -1,0 +1,22 @@
+/* Override Bootstrap's focus outline for input fields */
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+/*
+p{
+    font-family: 'Cairo', sans-serif;
+}
+*/
+.btn-dark{
+    background-color: black;
+    border-color: white;
+    width: 100px;
+ 
+}
+.btn-dark:hover{
+    background-color: black;
+    border-color: white;
+    width: 100px;
+ 
+}

@@ -5,12 +5,15 @@ function checkName(event) {
 
     if (name === "الياس") {
         window.location.href = "Killer-reveal.html";
-    } else if (name === "محمد") {
+    } else if (name === "مراد" || name === "جاد" ||
+    name === "شيماء" || name === "صفوان" || name === "هيا" ) {
         Swal.fire({
             icon: 'error',
             title: 'خطأ...',
+            color : '#000',
+            // iconColor: '#000',
             text: 'لا لا، هذا ليس صحيحاً.',
-            confirmButtonColor:"#d33",
+            confirmButtonColor:"#000",
             confirmButtonText: "حسنا"
         });
     } else {
@@ -18,7 +21,10 @@ function checkName(event) {
             icon: 'warning',
             title: name +' من هو ' + name + '؟؟!!',
             text:'ارجع إلى الصفحة وحاول كتابة الاسم الأول الحقيقي للمشتبه به - بدون ألقاب، فقط اسمه الأول، من فضلك',
-            confirmButtonColor:"#d33",
+            // background: '#000',
+             color : '#000',
+            iconColor: '#000',
+            confirmButtonColor:"#000",
             confirmButtonText: "حسنا"
         });
     }
